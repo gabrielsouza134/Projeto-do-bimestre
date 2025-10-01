@@ -1,17 +1,14 @@
 
 :root{
-  /* Cores */
   --white: #ffffff;
   --black: #000000;
-  --brand: #0b5ea8; /* azul institucional aproximado */
+  --brand: #0b5ea8; 
   --muted: #6b7280;
   --bg: #f7f9fb;
 
-  /* Tipografia */
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   --base-size: 16px;
 
-  /* Espaçamentos */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
@@ -21,7 +18,6 @@
   --container-max: 1100px;
 }
 
-/* Reset simples */
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -52,7 +48,6 @@ a:focus{outline:3px solid #ffbf47; outline-offset:2px}
   left:10px; top:10px; width:auto; height:auto; padding:.5rem; background:var(--brand); color:var(--white); z-index:9999; border-radius:4px;
 }
 
-/* Header */
 .site-header{background:var(--white); border-bottom:1px solid #e6edf3}
 .header-inner{display:flex; align-items:center; justify-content:space-between; padding:var(--space-md) 0}
 .brand img{display:block}
@@ -61,7 +56,6 @@ a:focus{outline:3px solid #ffbf47; outline-offset:2px}
 .main-nav .btn{background:transparent; border:1px solid var(--brand); padding:.45rem .7rem; border-radius:6px}
 .main-nav .btn:focus, .main-nav .btn:hover{background:var(--brand); color:var(--white)}
 
-/* Hero */
 .hero{padding:var(--space-lg) 0; background:linear-gradient(180deg, rgba(11,94,168,0.06), transparent)}
 .hero-inner{text-align:left}
 .hero h1{font-size:1.375rem; margin:0 0 .5rem}
@@ -70,7 +64,6 @@ a:focus{outline:3px solid #ffbf47; outline-offset:2px}
 .primary{background:var(--brand); color:var(--white)}
 .secondary{border:1px solid var(--brand)}
 
-/* News */
 .news{padding:var(--space-lg) 0}
 .news-grid{display:grid; grid-template-columns:1fr; gap:var(--space-md)}
 .news-card{background:var(--white); padding:var(--space-md); border-radius:8px; box-shadow:0 1px 2px rgba(16,24,40,0.04)}
@@ -79,29 +72,27 @@ a:focus{outline:3px solid #ffbf47; outline-offset:2px}
 .news-card .meta{color:var(--muted); font-size:.875rem}
 .more{text-align:center; margin-top:var(--space-md)}
 
-/* Areas */
 .areas{padding:var(--space-lg) 0}
 .areas-grid{display:grid; grid-template-columns:1fr 1fr; gap:var(--space-md)}
 .area{background:var(--white); padding:var(--space-md); border-radius:8px}
 
-/* Highlights/aside */
 .highlights{padding:var(--space-md) 0}
 .highlights ul{margin:0; padding-left:1rem}
 
-/* Publications */
+
 .publications{padding:var(--space-lg) 0}
 .pub-grid{display:grid; grid-template-columns:1fr; gap:var(--space-md)}
 .pub-card{background:var(--white); padding:var(--space-md); border-radius:8px}
 
-/* Footer */
+
 .site-footer{background:#f0f4f8; padding:var(--space-md) 0; margin-top:var(--space-xl)}
 .footer-inner{display:flex; flex-direction:column; gap:.5rem; align-items:center}
 .site-footer nav ul{display:flex; gap:var(--space-sm); list-style:none; padding:0; margin:0}
 
-/* Focus visible for keyboard users */
+
 :focus{outline:3px solid #ffbf47; outline-offset:2px}
 
-/* Mobile-first done. Now breakpoints (tablet and desktop) */
+
 @media (min-width: 600px){
   .hero h1{font-size:1.75rem}
   .news-grid{grid-template-columns:repeat(2, 1fr)}
@@ -119,14 +110,13 @@ a:focus{outline:3px solid #ffbf47; outline-offset:2px}
   .areas-grid{grid-template-columns:repeat(4, 1fr)}
 }
 
-/* Small helpers */
+
 .meta{font-size:.85rem}
 .btn, .primary, .secondary, .cta-apply{cursor:pointer}
 
-/* Ensure links in cards are focusable and obvious */
+
 .news-card a, .pub-card a{display:inline-block}
 
-/* Ensure sufficient contrast for small text (WCAG friendly) */
 @media (prefers-contrast: more){
   body{background:#fff}
 }
