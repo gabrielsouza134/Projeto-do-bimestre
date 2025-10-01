@@ -1,0 +1,147 @@
+<!-- INDEX.HTML -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ONU Brasil — Página Inicial</title>
+  <meta name="description" content="Recriação acadêmica da página inicial da ONU Brasil — HTML semântico, CSS mobile-first e acessibilidade." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="ONU Brasil - Página inicial">
+        <img src="img/logo-onu.svg" alt="Logotipo ONU Brasil" width="160" height="40">
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#noticias">Notícias</a></li>
+          <li><a href="#areas">Áreas</a></li>
+          <li><a href="#publicacoes">Publicações</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a class="btn" href="#apoie">Apoie</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <h1 id="hero-title">ONU Brasil — Promovendo desenvolvimento, direitos humanos e meio ambiente</h1>
+        <p class="lead">Trabalhando com parceiros para construir um Brasil mais justo, sustentável e resiliente.</p>
+        <p class="hero-ctas">
+          <a class="primary" href="#acoes">Saiba mais</a>
+          <a class="secondary" href="#noticias">Últimas notícias</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="noticias" class="news container" aria-labelledby="noticias-title">
+      <header>
+        <h2 id="noticias-title">Últimas notícias</h2>
+      </header>
+
+      <div class="news-grid">
+        <article class="news-card" tabindex="0">
+          <img src="img/reuniao.png" alt="Foto ilustrativa de reunião sobre desenvolvimento sustentável">
+          <h3><a href="#">ONU lança relatório sobre desenvolvimento sustentável no Brasil</a></h3>
+          <p class="meta">12 set. 2025 — ONU Brasil</p>
+        </article>
+
+        <article class="news-card" tabindex="0">
+          <img src="img/capacitaçao-rural.jpeg" alt="Imagem de projeto de capacitação comunitária">
+          <h3><a href="#">Programa de capacitação para beneficia comunidades rurais</a></h3>
+          <p class="meta">5 set. 2025 — Parcerias</p>
+        </article>
+
+        <article class="news-card" tabindex="0">
+          <img src="img/politica-e-direito-humano.jpeg" alt="Foto de evento sobre direitos humanos">
+          <h3><a href="#">Evento discute políticas públicas e direitos humanos</a></h3>
+          <p class="meta">27 ago. 2025 — Direitos Humanos</p>
+        </article>
+      </div>
+
+      <p class="more"><a href="#">Ver todas as notícias</a></p>
+    </section>
+
+    <section id="areas" class="areas container" aria-labelledby="areas-title">
+      <header>
+        <h2 id="areas-title">Nossas áreas de atuação</h2>
+      </header>
+
+      <div class="areas-grid">
+        <article class="area" tabindex="0">
+          <h3>Desenvolvimento Sustentável</h3>
+          <p>Programas que fortalecem políticas e práticas sustentáveis no Brasil.</p>
+        </article>
+        <article class="area" tabindex="0">
+          <h3>Direitos Humanos</h3>
+          <p>Monitoramento, diálogos e apoio a políticas públicas.</p>
+        </article>
+        <article class="area" tabindex="0">
+          <h3>Meio Ambiente</h3>
+          <p>Projetos para conservação e adaptação às mudanças climáticas.</p>
+        </article>
+        <article class="area" tabindex="0">
+          <h3>Saúde & Bem-estar</h3>
+          <p>Iniciativas para fortalecimento dos sistemas de saúde.</p>
+        </article>
+      </div>
+    </section>
+
+    <aside class="highlights container" aria-labelledby="destaques-title">
+      <h2 id="destaques-title">Destaques</h2>
+      <ul>
+        <li><a href="#">Relatório anual 2024 — resumo executivo (PDF)</a></li>
+        <li><a href="#">Guia de parcerias — como trabalhar com a ONU</a></li>
+        <li><a href="#">Eventos e participação pública</a></li>
+      </ul>
+    </aside>
+
+    <section id="publicacoes" class="publications container" aria-labelledby="pub-title">
+      <h2 id="pub-title">Publicações recentes</h2>
+      <div class="pub-grid">
+        <article class="pub-card" tabindex="0">
+          <h3><a href="#">Políticas de inclusão social: análise 2025</a></h3>
+          <p>Resumo e download em PDF.</p>
+        </article>
+        <article class="pub-card" tabindex="0">
+          <h3><a href="#">Atlas de indicadores ambientais</a></h3>
+          <p>Mapeamento detalhado por região.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre" class="about container" aria-labelledby="sobre-title">
+      <h2 id="sobre-title">Sobre a ONU Brasil</h2>
+      <p>Descubra o que as Nações Unidas no Brasil estão fazendo para alcançar <br> os Objetivos de Desenvolvimento Sustentável.</p>
+    </section>
+
+    <section id="apoie" class="support container" aria-labelledby="apoie-title">
+      <h2 id="apoie-title">Como apoiar</h2>
+      <p>Informações sobre doações, chamadas públicas e parcerias.</p>
+      <p><a class="cta-apply" href="#">Saiba como participar</a></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <nav aria-label="Links úteis">
+        <ul>
+          <li><a href="#">Política de privacidade</a></li>
+          <li><a href="#">Termos</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">© ONU Brasil — Recriação acadêmica</p>
+    </div>
+  </footer>
+</body>
+</html>
+
